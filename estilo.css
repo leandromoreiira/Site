@@ -1,35 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/*Cores do projeto:
+#251E33
+#241347
+#875BDE
+#696178
+#7E68AB
+*/
 
 *
 {
     margin: 0px;
     padding: 0px;
 }
+body
+{
+    background-image: linear-gradient(to top, #875BDE , #241347);
+    min-height: 100vh;
+}
 header#menu
 {
-    background-color: bisque;
+   
     height: 40px;
+    margin-bottom: 20px;
+    font-family: app;
 }
 header#menu>a
 {
-    background-color: aqua;
+    
+    color: white;
+    margin: 2px;
+    margin-top: 3px;
+    
 }
 div#informacoes
 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    width: 230px;
-    border: 1px solid black;
+    width: 300px;
+    border: 3px solid black;
     border-radius: 20px;
-    ;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 600px;
+    position: relative;
     
 }
-
+div#informacoes>ul
+{
+    margin: 5px;
+  
+    list-style: none;
+    
+}
 div#informacoes>img
 {
     border-radius: 100px;
-    background-color: aqua;
-    
+   
 }
+div#informacoes>ul>li>a
+{
+   color: white;  
+}
+img#logocss
+{
+    height: 80px;
+    border-radius: 110%;
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    transform: translate(-50% -50%);
+}
+img#logohtml
+{
+    height: 80px;
+    border-radius: 110%;
+    position: absolute;
+    right: 5%;
+    top: 65%;
+    transform: translate(-50% -50%);
+}
+img#logogithub
+{
+    height: 80px;
+    border-radius: 110%;
+    position: absolute;
+    left: 5%;
+    top: 83%;
+    transform: translate(-50% -50%);
+}
+img#logogit
+{
+    height: 80px;
+    border-radius: 110%;
+    position: absolute;
+    right: 5%;
+    top: 83%;
+    transform: translate(-50% -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 992px)
 {
     
