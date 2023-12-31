@@ -4,43 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
    
     <header id="menu">
-        <a href="#" target="_blank" >topo </a>
-    </header>
-    <div id="informacoes">
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">lists<span id="menu">Projetos Pessoais</span> <br></i>
+        <menu id="itens">
+           <ul>
+                <li>
+                    <i class="material-symbols-outlined">link</i>
+                    <a href="https://leandromoreiira.github.io/Projeto-Login/">Projeto Tela de Login </a></li>
+                <li>
+                    <a href="https://leandromoreiira.github.io/Projeto-Menu-responsivo/">Projeto Menu com Media Querry</a></li>
+                <li>
+                    <a href="https://leandromoreiira.github.io/Projeto-Cordel/">Projeto Cordel</a></li>
+                <li>
+                    <a href="https://leandromoreiira.github.io/Projeto-Android/">Projeto Android</a></li>
+                    <br>
+           </ul> 
+        </menu>
+        </header>
+     <div id="informacoes">
         <h1>Leandro Victor Moreira</h1>
         <img src="imagens/Imagem do WhatsApp de 2023-10-24 à(s) 20.53.23_c41f182e.png"class="feat" >
+        
      <ul>
-        <li><a href="https://www.linkedin.com/in/leandro-victor-bb3460215/"  target="_blank" rel="">Linkedin</a></li>
-        <li> <a href="https://www.instagram.com/_leomoreiira_/"target='_blank'>Instagram</a></li>
-        <li><a href="https://github.com/leandromoreiira" target="_blank">Git-Hub</a></li>
-        <li><a href="https://www.youtube.com/channel/UCnXmptKCDJen4zKCKGBligQ" target="_blank">YouTube</a></li>
+        <li><span class="material-symbols-outlined">
+            link </span>
+            <a href="https://www.linkedin.com/in/leandro-victor-bb3460215/"  target="_blank" rel="">Linkedin</a></li>
+        <li> <span class="material-symbols-outlined">
+            link</span>
+            <a href="https://www.instagram.com/_leomoreiira_/"target='_blank'> Instagram</a></li>
+        <li><span class="material-symbols-outlined">
+            link</span
+            ><a href="https://github.com/leandromoreiira" target="_blank">Git-Hub</a></li>
+        <li><span class="material-symbols-outlined">
+            link</span>
+            <a href="https://www.youtube.com/channel/UCnXmptKCDJen4zKCKGBligQ" target="_blank">YouTube</a></li>
 
-        <img src="imagens/css logo.png" alt="logocss" id="logocss">
-        <img src="imagens/html.png" alt="logohtml" id="logohtml">
-        <img src="imagens/logo github.png" alt="logogithub" id="logogithub">
-        <img src="imagens/logo git.png" alt="logogit" id="logogit">
 
-    </ul>
+        </ul>
+
+       
+            <ol>
+                <img src="imagens/css logo.png" alt="logocss" id="logocss">
+                <img src="imagens/html.png" alt="logohtml" id="logohtml">
+                <img src="imagens/logo github.png" alt="logogithub" id="logogithub">
+                <img src="imagens/logo git.png" alt="logogit" id="logogit">
+            </ol>
+       
+
+    
     </div>
      <main>
-        <h2> Historia </h2>
         <h3>Como a programação chegou em mim? </h3>
-            <p>
-            Conheci a programação através de um projeto de informatica da escola , cujo foco era a apresentar aos alunos a programação, tendo em vista desde os principios da programação até  a inicialização nas linguagens C e C++ .
+            <p> <br>
+                Conheci a programação através de um projeto 
+              de informatica da escola , cujo foco era a apresentar aos alunos a programação, tendo em vista desde os principios da programação até  a inicialização nas linguagens C e C++ .
         </p>
             <p>
             Seguido minha Jornada , continuei estudando, depois daquele curso , decidi o que queria fazer, após um tempo voltei aos estudos seguindo
             Algoritimo e Logica de programação e posteriormente HTML E CSS
-
-            
         </p>
+        <br>
+        <h3>Meus Objetivos</h3>
+        <P>No momento meu obejetivo é conseguir a migração de carreira e começar a trabalhar na programação , estou estudando Java Script e pretendo ir adequando esse e meus outros projetos com todos os conhecimentos que obtiver nesse tempo.</P>
+        <br>
     </main>
-
-        
+    <script>
+        function clickMenu() 
+        {
+            var itens = document.getElementById('itens');
+                if (itens.style.display == "none")
+                {itens.style.display = "block";} 
+                    else {
+                        itens.style.display = "none";
+                            }
+       }
+    </script>
+    <footer>
+        Site desenvolvido por Leandro Victor usando HTML , CSS e leve integração com JavaScript
+    </footer>
    </body>
 </html>
